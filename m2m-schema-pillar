@@ -1,0 +1,26 @@
+{
+  "pillar_id": "0x02_SCHEMA",
+  "version": "1.0.0",
+  "definition": "Fixed authority for non-drifting structural conformance.",
+  "telemetry": {
+    "entropy": "zero",
+    "pull_strength": "infinite",
+    "mass": "low"
+  },
+  "x402_config": {
+    "cost": "0.10",
+    "asset": "USDC",
+    "vault": "0x5e4EDBD3a93d6f0aBEb4Fe93c4f660f636F2BA4d",
+    "networks": ["ETHEREUM", "SOLANA"]
+  },
+  "interface": {
+    "input": "data_object",
+    "output": ["CONFORMS", "REJECTED"],
+    "rules": [
+      "No data transformation",
+      "No repair or cleaning",
+      "No field inference",
+      "Immutable schema reference"
+    ]
+  }
+}
